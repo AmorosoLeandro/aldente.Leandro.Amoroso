@@ -1,0 +1,75 @@
+/* comentario en sas y css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilos del body */
+.contenedorPrincipal {
+  background-color: #fafae1;
+  /* estilos del header */
+  /* estilos del main */
+  /* estilos del footer */ }
+  .contenedorPrincipal header {
+    background-color: #a66e04;
+    opacity: 50%; }
+    .contenedorPrincipal header .barraNavegacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .contenedorPrincipal header .barraNavegacion ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedorPrincipal header .barraNavegacion ul li {
+          margin: 0.4rem;
+          font-weight: bold; }
+          .contenedorPrincipal header .barraNavegacion ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: whitesmoke; }
+  .contenedorPrincipal .mainHome {
+    font-family: 'Cinzel', serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 0.8fr 0.8fr 0.8fr 0.5fr;
+    grid-template-areas: "encabezado" "imgHomeUno" "textoHomeUno" "imgHomeDos" "textoHomeDos";
+    justify-content: center;
+    align-items: center;
+    justify-items: center; }
+    .contenedorPrincipal .mainHome .encabezado {
+      grid-area: encabezado; }
+      .contenedorPrincipal .mainHome .encabezado .encabezadoTitulo {
+        text-align: center;
+        font-size: 3rem;
+        margin: 1rem; }
+      .contenedorPrincipal .mainHome .encabezado .encabezadoSubtitulo {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 1rem; }
+    .contenedorPrincipal .mainHome .imgHomeUno {
+      grid-area: imgHomeUno; }
+    .contenedorPrincipal .mainHome .textoHomeUno {
+      grid-area: textoHomeUno;
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem;
+      width: 350px; }
+    .contenedorPrincipal .mainHome .imgHomeDos {
+      grid-area: imgHomeDos; }
+    .contenedorPrincipal .mainHome .textoHomeDos {
+      grid-area: textoHomeDos;
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem;
+      width: 350px; }
+  .contenedorPrincipal .footerGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedorPrincipal .footerGeneral .footerGeneral .redes {
+      margin: 1.5rem; }
+      .contenedorPrincipal .footerGeneral .footerGeneral .redes .footerGeneral .redes .aRedes {
+        margin: 1rem; }
