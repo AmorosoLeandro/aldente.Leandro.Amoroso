@@ -1,10 +1,11 @@
 //comentario sin que se vea en el css
 /* comentario en sas y css */
 
-@import "utilities/nosotros";
-@import "utilities/productos";
-@import "utilities/historia";
-@import "utilities/contacto";
+@import "components/nosotros";
+@import "components/productos";
+@import "components/historia";
+@import "components/contacto";
+@import "base/mediaQueries";
 
 
 * {
@@ -17,32 +18,62 @@
 
 .contenedorPrincipal {
     background-color: rgb(250, 250, 225);
-    /* estilos del header */
-    header{
-        background-color: rgb(166, 110, 4);
-    opacity: 50%;
+}
+
+/* estilos del header */
+header {
+    background-color: rgb(166, 110, 4);
+
     .barraNavegacion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        ul {
-            list-style: none;
+        
+
+        .divLogo {
             display: flex;
             justify-content: center;
             align-items: center;
-            li {
-                margin: 0.4rem;
-                font-weight: bold;
-                a {
-                    text-decoration: none;
-                    font-size: 1rem;
-                    color: whitesmoke
+
+        }
+
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    margin: 0.4rem;
+                    font-weight: bold;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1rem;
+                        color: whitesmoke
+                    }
                 }
             }
         }
+
     }
 }
+
+
+
+/* estilos del footer */
+.footerGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footerGeneral .redes {
+        margin: 1.5rem;
+
+        .footerGeneral .redes .aRedes {
+            margin: 1rem;
+        }
+    }
+}
+
 /* estilos del main */
 .mainHome {
     font-family: 'Cinzel', serif;
@@ -53,22 +84,27 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+
     .encabezado {
         grid-area: encabezado;
+
         .encabezadoTitulo {
             text-align: center;
             font-size: 3rem;
-            margin: 1rem;            
+            margin: 1rem;
         }
+
         .encabezadoSubtitulo {
             text-align: center;
             font-size: 1.5rem;
             margin: 1rem;
         }
     }
+
     .imgHomeUno {
         grid-area: imgHomeUno;
     }
+
     .textoHomeUno {
         grid-area: textoHomeUno;
         text-align: center;
@@ -76,9 +112,11 @@
         margin: 1rem;
         width: 350px;
     }
+
     .imgHomeDos {
         grid-area: imgHomeDos;
     }
+
     .textoHomeDos {
         grid-area: textoHomeDos;
         text-align: center;
@@ -86,17 +124,4 @@
         margin: 1rem;
         width: 350px;
     }
-}
-/* estilos del footer */
-.footerGeneral {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .footerGeneral .redes {
-        margin: 1.5rem;
-        .footerGeneral .redes .aRedes {
-            margin: 1rem;
-        }
-    }
-}
 }

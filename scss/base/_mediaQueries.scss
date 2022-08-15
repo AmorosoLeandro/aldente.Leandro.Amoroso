@@ -1,0 +1,14 @@
+@media screen and (min-width: 600px) {
+    header {
+        background-image: url(../imagenes/platospresentacionok.jpg);
+        height: 10rem;
+        opacity: 0.8;
+        padding: 0;
+
+        .barraNavegacion {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+/* estilos de main productos */
+
+.mainProductos {
+    font-family: 'Cinzel', serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "encabezado""contenedorRavioles""contenedorÑoquis""contenedorTallarines""contenedorFusilli""puchito";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    .encabezado {
+        grid-area: encabezado;
+
+        .encabezadoTitulo {
+            text-align: center;
+            font-size: 3rem;
+            margin: 1rem;
+        }
+
+        .encabezadoSubtitulo {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+    }
+
+    .contenedorRavioles {
+        grid-area: contenedorRavioles;
+        display: flex;
+        flex-direction: column;
+
+        .nombreProducto {
+            text-align: center;
+        }
+
+        .verMas {
+            display: flex;
+            justify-content: right;
+
+            a {
+                text-decoration: none;
+                border: solid;
+                border-color: rgb(166, 110, 4);
+                border-radius: 3rem;
+                padding: 0.3rem;
+                font-weight: bold;
+                color: rgb(166, 110, 4);
+            }
+        }
+
+        .textoRavioles {
+            display: none;
+            width: 35rem;
+        }
+    }
+
+    .contenedorÑoquis {
+        grid-area: contenedorÑoquis;
+        display: flex;
+        flex-direction: column;
+
+        .nombreProducto {
+            text-align: center;
+        }
+
+        .verMas {
+            display: flex;
+            justify-content: right;
+
+            a {
+                text-decoration: none;
+                border: solid;
+                border-color: rgb(166, 110, 4);
+                border-radius: 3rem;
+                padding: 0.3rem;
+                font-weight: bold;
+                color: rgb(166, 110, 4);
+            }
+        }
+
+        .textoÑoquis {
+            display: none;
+            width: 35rem;
+        }
+
+    }
+
+    .contenedorTallarines {
+        grid-area: contenedorTallarines;
+        display: flex;
+        flex-direction: column;
+
+        .nombreProducto {
+            text-align: center;
+        }
+
+        .verMas {
+            display: flex;
+            justify-content: right;
+
+            a {
+                text-decoration: none;
+                border: solid;
+                border-color: rgb(166, 110, 4);
+                border-radius: 3rem;
+                padding: 0.3rem;
+                font-weight: bold;
+                color: rgb(166, 110, 4);
+            }
+        }
+
+        .textoTallarines {
+            display: none;
+            width: 35rem;
+        }
+    }
+
+    .contenedorFusilli {
+        grid-area: contenedorFusilli;
+        display: flex;
+        flex-direction: column;
+
+        .nombreProducto {
+            text-align: center;
+        }
+
+        .verMas {
+            display: flex;
+            justify-content: right;
+
+            a {
+                text-decoration: none;
+                border: solid;
+                border-color: rgb(166, 110, 4);
+                border-radius: 3rem;
+                padding: 0.3rem;
+                font-weight: bold;
+                color: rgb(166, 110, 4);
+            }
+        }
+
+        .textoFusilli {
+            display: none;
+            width: 35rem;
+        }
+    }
+}

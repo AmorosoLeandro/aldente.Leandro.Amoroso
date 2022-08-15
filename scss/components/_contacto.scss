@@ -1,0 +1,36 @@
+/* estilos del main contacto */
+
+.mainContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .encabezado {
+        font-family: 'Cinzel', serif;
+
+        .encabezadoTitulo {
+            text-align: center;
+            font-size: 3rem;
+            margin: 1rem;
+        }
+
+        .encabezadoSubtitulo {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+    }
+
+    .formulario {
+        width: 350px;
+        background-color: rgb(242, 196, 112);
+        padding: 1rem;
+        border-radius: 30px;
+        margin: 1rem;
+    }
+
+    .mapaUbi {
+        border-radius: 30px;
+        margin: 1rem;
+    }
+}
