@@ -1,105 +1,49 @@
-@charset "UTF-8";
 /* comentario en sas y css */
 /* estilos de main productos */
 .mainProductos {
   font-family: 'Cinzel', serif;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "encabezado" "contenedorRavioles" "contenedorÑoquis" "contenedorTallarines" "contenedorFusilli" "puchito";
   justify-content: center;
   align-items: center;
   justify-items: center; }
-  .mainProductos .encabezado {
-    grid-area: encabezado; }
-    .mainProductos .encabezado .encabezadoTitulo {
-      text-align: center;
-      font-size: 3rem;
-      margin: 1rem; }
-    .mainProductos .encabezado .encabezadoSubtitulo {
-      text-align: center;
-      font-size: 1.5rem;
-      margin: 1rem; }
-  .mainProductos .contenedorRavioles {
-    grid-area: contenedorRavioles;
-    display: flex;
-    flex-direction: column; }
-    .mainProductos .contenedorRavioles .nombreProducto {
-      text-align: center; }
-    .mainProductos .contenedorRavioles .verMas {
-      display: flex;
-      justify-content: right; }
-      .mainProductos .contenedorRavioles .verMas a {
-        text-decoration: none;
-        border: solid;
-        border-color: #a66e04;
-        border-radius: 3rem;
-        padding: 0.3rem;
-        font-weight: bold;
-        color: #a66e04; }
-    .mainProductos .contenedorRavioles .textoRavioles {
-      display: none;
-      width: 35rem; }
-  .mainProductos .contenedorÑoquis {
-    grid-area: contenedorÑoquis;
-    display: flex;
-    flex-direction: column; }
-    .mainProductos .contenedorÑoquis .nombreProducto {
-      text-align: center; }
-    .mainProductos .contenedorÑoquis .verMas {
-      display: flex;
-      justify-content: right; }
-      .mainProductos .contenedorÑoquis .verMas a {
-        text-decoration: none;
-        border: solid;
-        border-color: #a66e04;
-        border-radius: 3rem;
-        padding: 0.3rem;
-        font-weight: bold;
-        color: #a66e04; }
-    .mainProductos .contenedorÑoquis .textoÑoquis {
-      display: none;
-      width: 35rem; }
-  .mainProductos .contenedorTallarines {
-    grid-area: contenedorTallarines;
-    display: flex;
-    flex-direction: column; }
-    .mainProductos .contenedorTallarines .nombreProducto {
-      text-align: center; }
-    .mainProductos .contenedorTallarines .verMas {
-      display: flex;
-      justify-content: right; }
-      .mainProductos .contenedorTallarines .verMas a {
-        text-decoration: none;
-        border: solid;
-        border-color: #a66e04;
-        border-radius: 3rem;
-        padding: 0.3rem;
-        font-weight: bold;
-        color: #a66e04; }
-    .mainProductos .contenedorTallarines .textoTallarines {
-      display: none;
-      width: 35rem; }
-  .mainProductos .contenedorFusilli {
-    grid-area: contenedorFusilli;
-    display: flex;
-    flex-direction: column; }
-    .mainProductos .contenedorFusilli .nombreProducto {
-      text-align: center; }
-    .mainProductos .contenedorFusilli .verMas {
-      display: flex;
-      justify-content: right; }
-      .mainProductos .contenedorFusilli .verMas a {
-        text-decoration: none;
-        border: solid;
-        border-color: #a66e04;
-        border-radius: 3rem;
-        padding: 0.3rem;
-        font-weight: bold;
-        color: #a66e04; }
-    .mainProductos .contenedorFusilli .textoFusilli {
-      display: none;
-      width: 35rem; }
+  .mainProductos .encabezado .encabezadoTitulo {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem; }
+  .mainProductos .encabezado .encabezadoSubtitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem; }
+  .mainProductos .contenedorProductos {
+    display: grid;
+    grid-template-columns: 20rem;
+    justify-content: center;
+    gap: 1rem; }
+    .mainProductos .contenedorProductos .contenedorProducto {
+      width: 19rem;
+      display: grid;
+      grid-template-rows: auto;
+      background-color: whitesmoke;
+      border-radius: 3rem;
+      overflow: hidden;
+      border: solid #583b04; }
+      .mainProductos .contenedorProductos .contenedorProducto .imgProducto {
+        width: 110%; }
+      .mainProductos .contenedorProductos .contenedorProducto .tituloProducto {
+        text-align: center; }
+        .mainProductos .contenedorProductos .contenedorProducto .tituloProducto h2 {
+          font-size: 2rem; }
+      .mainProductos .contenedorProductos .contenedorProducto .textoProducto {
+        text-align: center;
+        font-weight: bold; }
+      .mainProductos .contenedorProductos .contenedorProducto .verMas {
+        background-color: #583b04;
+        text-align: center; }
+        .mainProductos .contenedorProductos .contenedorProducto .verMas a {
+          text-align: center;
+          text-decoration: none;
+          font-weight: bold;
+          color: whitesmoke;
+          font-size: 1.5rem; }
 
 /* estilos del main contacto */
 .mainContacto {
@@ -135,7 +79,11 @@
     header .barraNavegacion {
       display: flex;
       align-items: center;
-      justify-content: space-around; } }
+      justify-content: space-around; }
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; } }
 
 * {
   margin: 0;
@@ -148,7 +96,7 @@
 
 /* estilos del header */
 header {
-  background-color: #a66e04; }
+  background-color: #583b04; }
   header .barraNavegacion .divLogo {
     display: flex;
     justify-content: center;

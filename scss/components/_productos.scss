@@ -2,17 +2,11 @@
 
 .mainProductos {
     font-family: 'Cinzel', serif;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "encabezado""contenedorRavioles""contenedorÑoquis""contenedorTallarines""contenedorFusilli""puchito";
     justify-content: center;
     align-items: center;
     justify-items: center;
 
     .encabezado {
-        grid-area: encabezado;
-
         .encabezadoTitulo {
             text-align: center;
             font-size: 3rem;
@@ -26,124 +20,55 @@
         }
     }
 
-    .contenedorRavioles {
-        grid-area: contenedorRavioles;
-        display: flex;
-        flex-direction: column;
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: 20rem;
+        justify-content: center;
+        gap: 1rem;
 
-        .nombreProducto {
-            text-align: center;
-        }
+        .contenedorProducto {
+            width: 19rem;
+            display: grid;
+            grid-template-rows: auto;
+            background-color: rgb(245, 245, 245);
+            border-radius: 3rem;
+            overflow: hidden;
+            border: solid rgb(88, 59, 4);
 
-        .verMas {
-            display: flex;
-            justify-content: right;
-
-            a {
-                text-decoration: none;
-                border: solid;
-                border-color: rgb(166, 110, 4);
-                border-radius: 3rem;
-                padding: 0.3rem;
-                font-weight: bold;
-                color: rgb(166, 110, 4);
+            .imgProducto {
+                width: 110%;
             }
-        }
 
-        .textoRavioles {
-            display: none;
-            width: 35rem;
+            .tituloProducto {
+                text-align: center;
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+
+            .textoProducto {
+                text-align: center;
+                font-weight: bold;
+
+            }
+
+            .verMas {
+                background-color: rgb(88, 59, 4);
+                text-align: center;
+
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: whitesmoke;
+                    font-size: 1.5rem;
+
+                }
+            }
         }
     }
 
-    .contenedorÑoquis {
-        grid-area: contenedorÑoquis;
-        display: flex;
-        flex-direction: column;
 
-        .nombreProducto {
-            text-align: center;
-        }
 
-        .verMas {
-            display: flex;
-            justify-content: right;
-
-            a {
-                text-decoration: none;
-                border: solid;
-                border-color: rgb(166, 110, 4);
-                border-radius: 3rem;
-                padding: 0.3rem;
-                font-weight: bold;
-                color: rgb(166, 110, 4);
-            }
-        }
-
-        .textoÑoquis {
-            display: none;
-            width: 35rem;
-        }
-
-    }
-
-    .contenedorTallarines {
-        grid-area: contenedorTallarines;
-        display: flex;
-        flex-direction: column;
-
-        .nombreProducto {
-            text-align: center;
-        }
-
-        .verMas {
-            display: flex;
-            justify-content: right;
-
-            a {
-                text-decoration: none;
-                border: solid;
-                border-color: rgb(166, 110, 4);
-                border-radius: 3rem;
-                padding: 0.3rem;
-                font-weight: bold;
-                color: rgb(166, 110, 4);
-            }
-        }
-
-        .textoTallarines {
-            display: none;
-            width: 35rem;
-        }
-    }
-
-    .contenedorFusilli {
-        grid-area: contenedorFusilli;
-        display: flex;
-        flex-direction: column;
-
-        .nombreProducto {
-            text-align: center;
-        }
-
-        .verMas {
-            display: flex;
-            justify-content: right;
-
-            a {
-                text-decoration: none;
-                border: solid;
-                border-color: rgb(166, 110, 4);
-                border-radius: 3rem;
-                padding: 0.3rem;
-                font-weight: bold;
-                color: rgb(166, 110, 4);
-            }
-        }
-
-        .textoFusilli {
-            display: none;
-            width: 35rem;
-        }
-    }
 }

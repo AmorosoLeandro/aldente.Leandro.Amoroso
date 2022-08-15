@@ -11,4 +11,10 @@
             justify-content: space-around;
         }
     }
+    .contenedorProductos{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "1fr 1fr";
+        
+    }
 }
