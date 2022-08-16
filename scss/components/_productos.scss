@@ -1,4 +1,5 @@
 /* estilos de main productos */
+@import "base/variables";
 
 .mainProductos {
     font-family: 'Cinzel', serif;
@@ -33,7 +34,7 @@
             background-color: rgb(245, 245, 245);
             border-radius: 3rem;
             overflow: hidden;
-            border: solid rgb(88, 59, 4);
+            border: solid $col-marco;
 
             .imgProducto {
                 width: 110%;
