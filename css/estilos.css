@@ -1,51 +1,171 @@
 /* comentario en sas y css */
+@media screen and (min-width: 600px) {
+  header {
+    background-image: url(../imagenes/platospresentacionok.jpg);
+    height: 10rem;
+    opacity: 0.8;
+    padding: 0; }
+    header .barraNavegacion {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; } }
+
+.mainNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainNosotros .encabezado .encabezadoTitulo {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    font-family: 'Cinzel', serif; }
+  .mainNosotros .encabezado .encabezadoSubtitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-family: 'Cinzel', serif; }
+  .mainNosotros .sectNosotros {
+    background-color: whitesmoke;
+    border-radius: 3rem;
+    overflow: hidden;
+    border: solid #583b04;
+    width: 19rem; }
+    .mainNosotros .sectNosotros .textoNosotrosUno {
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem; }
+    .mainNosotros .sectNosotros .textoNosotrosDos {
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem; }
+
 /* estilos de main productos */
+@media screen and (min-width: 600px) {
+  header {
+    background-image: url(../imagenes/platospresentacionok.jpg);
+    height: 10rem;
+    opacity: 0.8;
+    padding: 0; }
+    header .barraNavegacion {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; } }
+
 .mainProductos {
-  font-family: 'Cinzel', serif;
   justify-content: center;
   align-items: center;
   justify-items: center; }
   .mainProductos .encabezado .encabezadoTitulo {
     text-align: center;
     font-size: 3rem;
-    margin: 1rem; }
+    margin: 1rem;
+    font-family: 'Cinzel', serif; }
   .mainProductos .encabezado .encabezadoSubtitulo {
     text-align: center;
     font-size: 1.5rem;
-    margin: 1rem; }
+    margin: 1rem;
+    font-family: 'Cinzel', serif; }
   .mainProductos .contenedorProductos {
     display: grid;
-    grid-template-columns: 20rem;
+    grid-template-columns: auto;
     justify-content: center;
     gap: 1rem; }
     .mainProductos .contenedorProductos .contenedorProducto {
-      width: 19rem;
-      display: grid;
-      grid-template-rows: auto;
+      display: flex;
+      flex-direction: column;
       background-color: whitesmoke;
       border-radius: 3rem;
       overflow: hidden;
-      border: solid #583b04; }
-      .mainProductos .contenedorProductos .contenedorProducto .imgProducto {
-        width: 110%; }
+      border: solid #583b04;
+      width: 19rem; }
       .mainProductos .contenedorProductos .contenedorProducto .tituloProducto {
         text-align: center; }
         .mainProductos .contenedorProductos .contenedorProducto .tituloProducto h2 {
+          font-family: 'Cinzel', serif;
           font-size: 2rem; }
       .mainProductos .contenedorProductos .contenedorProducto .textoProducto {
         text-align: center;
-        font-weight: bold; }
+        font-size: 1rem;
+        margin: 1rem; }
       .mainProductos .contenedorProductos .contenedorProducto .verMas {
         background-color: #583b04;
-        text-align: center; }
+        text-align: center;
+        height: 3rem;
+        justify-items: center; }
         .mainProductos .contenedorProductos .contenedorProducto .verMas a {
           text-align: center;
           text-decoration: none;
-          font-weight: bold;
           color: whitesmoke;
-          font-size: 1.5rem; }
+          font-size: 1.3rem; }
+
+@media screen and (min-width: 600px) {
+  header {
+    background-image: url(../imagenes/platospresentacionok.jpg);
+    height: 10rem;
+    opacity: 0.8;
+    padding: 0; }
+    header .barraNavegacion {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; } }
+
+.mainHistoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainHistoria .encabezado .encabezadoTitulo {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    font-family: 'Cinzel', serif; }
+  .mainHistoria .encabezado .encabezadoSubtitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-family: 'Cinzel', serif; }
+  .mainHistoria .sectHistoria {
+    background-color: whitesmoke;
+    border-radius: 3rem;
+    overflow: hidden;
+    border: solid #583b04;
+    width: 19rem; }
+    .mainHistoria .sectHistoria .textoHistoriaUno {
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem; }
+    .mainHistoria .sectHistoria .textoHistoriaDos {
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem; }
 
 /* estilos del main contacto */
+@media screen and (min-width: 600px) {
+  header {
+    background-image: url(../imagenes/platospresentacionok.jpg);
+    height: 10rem;
+    opacity: 0.8;
+    padding: 0; }
+    header .barraNavegacion {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; } }
+
 .mainContacto {
   display: flex;
   flex-direction: column;
@@ -55,20 +175,30 @@
     .mainContacto .encabezado .encabezadoTitulo {
       text-align: center;
       font-size: 3rem;
-      margin: 1rem; }
+      margin: 1rem;
+      font-family: 'Cinzel', serif; }
     .mainContacto .encabezado .encabezadoSubtitulo {
       text-align: center;
       font-size: 1.5rem;
+      margin: 1rem;
+      font-family: 'Cinzel', serif; }
+  .mainContacto .sectContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mainContacto .sectContacto .formulario {
+      width: 350px;
+      background-color: whitesmoke;
+      padding: 1rem;
+      border-radius: 30px;
       margin: 1rem; }
-  .mainContacto .formulario {
-    width: 350px;
-    background-color: #f2c470;
-    padding: 1rem;
-    border-radius: 30px;
-    margin: 1rem; }
-  .mainContacto .mapaUbi {
-    border-radius: 30px;
-    margin: 1rem; }
+      .mainContacto .sectContacto .formulario .botonForm {
+        background-color: #583b04;
+        border-color: #583b04; }
+    .mainContacto .sectContacto .mapaUbi {
+      border-radius: 30px;
+      margin: 1rem;
+      width: 350px; }
 
 @media screen and (min-width: 600px) {
   header {
@@ -129,8 +259,8 @@ header {
   font-family: 'Cinzel', serif;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 0.5fr 0.8fr 0.8fr 0.8fr 0.5fr;
-  grid-template-areas: "encabezado" "imgHomeUno" "textoHomeUno" "imgHomeDos" "textoHomeDos";
+  grid-template-rows: 0.5fr auto;
+  grid-template-areas: "encabezado" "sectHome";
   justify-content: center;
   align-items: center;
   justify-items: center; }
@@ -139,24 +269,32 @@ header {
     .mainHome .encabezado .encabezadoTitulo {
       text-align: center;
       font-size: 3rem;
-      margin: 1rem; }
+      margin: 1rem;
+      font-family: 'Cinzel', serif; }
     .mainHome .encabezado .encabezadoSubtitulo {
       text-align: center;
       font-size: 1.5rem;
+      margin: 1rem;
+      font-family: 'Cinzel', serif; }
+  .mainHome .sectHome {
+    grid-area: sectHome;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 3rem;
+    overflow: hidden;
+    border: solid #583b04;
+    width: 19rem; }
+    .mainHome .sectHome .imgHomeUno {
+      grid-area: imgHomeUno; }
+    .mainHome .sectHome .textoHomeUno {
+      grid-area: textoHomeUno;
+      text-align: center;
+      font-size: 1rem;
       margin: 1rem; }
-  .mainHome .imgHomeUno {
-    grid-area: imgHomeUno; }
-  .mainHome .textoHomeUno {
-    grid-area: textoHomeUno;
-    text-align: center;
-    font-size: 1rem;
-    margin: 1rem;
-    width: 350px; }
-  .mainHome .imgHomeDos {
-    grid-area: imgHomeDos; }
-  .mainHome .textoHomeDos {
-    grid-area: textoHomeDos;
-    text-align: center;
-    font-size: 1rem;
-    margin: 1rem;
-    width: 350px; }
+    .mainHome .sectHome .imgHomeDos {
+      grid-area: imgHomeDos; }
+    .mainHome .sectHome .textoHomeDos {
+      grid-area: textoHomeDos;
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem; }

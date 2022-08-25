@@ -1,69 +1,58 @@
 /* estilos de main productos */
+@import "base/mediaQueries";
 @import "base/variables";
+@import "base/listas";
+@import "base/mixin";
 
 .mainProductos {
-    font-family: 'Cinzel', serif;
     justify-content: center;
     align-items: center;
     justify-items: center;
 
     .encabezado {
         .encabezadoTitulo {
-            text-align: center;
-            font-size: 3rem;
-            margin: 1rem;
+            @include titulo;
         }
 
         .encabezadoSubtitulo {
-            text-align: center;
-            font-size: 1.5rem;
-            margin: 1rem;
+            @include subtitulo;
         }
     }
 
     .contenedorProductos {
         display: grid;
-        grid-template-columns: 20rem;
+        grid-template-columns: auto;
         justify-content: center;
         gap: 1rem;
 
-        .contenedorProducto {
-            width: 19rem;
-            display: grid;
-            grid-template-rows: auto;
-            background-color: rgb(245, 245, 245);
-            border-radius: 3rem;
-            overflow: hidden;
-            border: solid $col-marco;
-
-            .imgProducto {
-                width: 110%;
-            }
+        .contenedorProducto {            
+            display: flex;
+            flex-direction: column;
+            @include cont-general;
 
             .tituloProducto {
                 text-align: center;
+                
 
                 h2 {
+                    font-family: 'Cinzel', serif;
                     font-size: 2rem;
                 }
             }
 
             .textoProducto {
-                text-align: center;
-                font-weight: bold;
+                @include textGeneral;
 
             }
 
             .verMas {
                 background-color: rgb(88, 59, 4);
-                text-align: center;
+                 text-align: center;
+                height: 3rem;
+                justify-items: center;
 
                 a {
-                    text-align: center;
-                    text-decoration: none;
-                    font-weight: bold;
-                    color: whitesmoke;
-                    font-size: 1.5rem;
+                    @include boton-general;
 
                 }
             }

@@ -1,0 +1,34 @@
+@mixin cont-general {
+    background-color: nth($list: $colores, $n: 4);
+    border-radius: 3rem;
+    overflow: hidden;
+    border: solid $col-marco;
+    width: 19rem;
+}
+
+@mixin titulo {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    font-family: 'Cinzel', serif;
+}
+
+@mixin subtitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-family: 'Cinzel', serif;
+}
+
+@mixin textGeneral {
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+@mixin boton-general {
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}

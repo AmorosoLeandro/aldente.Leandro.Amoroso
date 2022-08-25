@@ -1,0 +1,28 @@
+@import "base/mediaQueries";
+@import "base/variables";
+@import "base/listas";
+@import "base/mixin";
+
+.mainNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .encabezado {
+
+        .encabezadoTitulo {
+            @include titulo;
+        }
+        .encabezadoSubtitulo {
+            @include subtitulo;
+        }
+    }
+    .sectNosotros{
+        @include cont-general;
+        .textoNosotrosUno{
+            @include textGeneral;
+        }
+        .textoNosotrosDos{
+            @include textGeneral;
+        }
+    }
+}

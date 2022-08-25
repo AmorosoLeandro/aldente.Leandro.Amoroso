@@ -1,0 +1,33 @@
+@import "base/mediaQueries";
+@import "base/variables";
+@import "base/listas";
+@import "base/mixin";
+
+.mainHistoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .encabezado {
+        .encabezadoTitulo {
+            @include titulo;
+        }
+
+        .encabezadoSubtitulo {
+            @include subtitulo;
+        }
+    }
+
+    .sectHistoria {
+
+        @include cont-general;
+
+        .textoHistoriaUno {
+            @include textGeneral;
+        }
+
+        .textoHistoriaDos {
+            @include textGeneral;
+        }
+    }
+}

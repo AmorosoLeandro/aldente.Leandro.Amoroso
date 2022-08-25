@@ -7,6 +7,8 @@
 @import "components/contacto";
 @import "base/mediaQueries";
 @import "base/variables";
+@import "base/listas";
+@import "base/mixin";
 
 
 * {
@@ -18,12 +20,12 @@
 /* estilos del body */
 
 .contenedorPrincipal {
-    background-color: rgb(250, 250, 225);
+    background-color: nth($list: $colores, $n: 1);
 }
 
 /* estilos del header */
 header {
-    background-color: rgb(88, 59, 4);
+    background-color: nth($list: $colores, $n: 2);
 
     .barraNavegacion {
 
@@ -49,7 +51,7 @@ header {
                     a {
                         text-decoration: none;
                         font-size: 1rem;
-                        color: whitesmoke
+                        color: nth($list: $colores, $n: 3);
                     }
                 }
             }
@@ -80,8 +82,8 @@ header {
     font-family: 'Cinzel', serif;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 0.5fr 0.8fr 0.8fr 0.8fr 0.5fr;
-    grid-template-areas: "encabezado""imgHomeUno""textoHomeUno""imgHomeDos""textoHomeDos";
+    grid-template-rows: 0.5fr auto;
+    grid-template-areas: "encabezado""sectHome";
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -90,39 +92,37 @@ header {
         grid-area: encabezado;
 
         .encabezadoTitulo {
-            text-align: center;
-            font-size: 3rem;
-            margin: 1rem;
+            @include titulo;
         }
 
         .encabezadoSubtitulo {
-            text-align: center;
-            font-size: 1.5rem;
-            margin: 1rem;
+            @include subtitulo;
         }
     }
 
-    .imgHomeUno {
-        grid-area: imgHomeUno;
-    }
+    .sectHome {
+        grid-area: sectHome;
+        justify-content: center;
+        @include cont-general;
+        
+        .imgHomeUno {
+            grid-area: imgHomeUno;
+        }
 
-    .textoHomeUno {
-        grid-area: textoHomeUno;
-        text-align: center;
-        font-size: 1rem;
-        margin: 1rem;
-        width: 350px;
-    }
+        .textoHomeUno {
+            grid-area: textoHomeUno;
+            @include textGeneral;
+            
+        }
 
-    .imgHomeDos {
-        grid-area: imgHomeDos;
-    }
+        .imgHomeDos {
+            grid-area: imgHomeDos;
+        }
 
-    .textoHomeDos {
-        grid-area: textoHomeDos;
-        text-align: center;
-        font-size: 1rem;
-        margin: 1rem;
-        width: 350px;
+        .textoHomeDos {
+            grid-area: textoHomeDos;
+            @include textGeneral;
+            
+        }
     }
 }
