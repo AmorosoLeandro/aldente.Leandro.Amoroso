@@ -38,6 +38,9 @@ header {
         }
 
         nav {
+            .botonNav{
+                background-color: nth($list: $colores, $n: 1);
+            }
             ul {
                 list-style: none;
                 display: flex;

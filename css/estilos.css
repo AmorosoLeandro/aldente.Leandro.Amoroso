@@ -1,5 +1,5 @@
 /* comentario en sas y css */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -44,7 +44,7 @@
       margin: 1rem; }
 
 /* estilos de main productos */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -106,7 +106,7 @@
           color: whitesmoke;
           font-size: 1.3rem; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -151,7 +151,7 @@
       margin: 1rem; }
 
 /* estilos del main contacto */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -200,7 +200,7 @@
       margin: 1rem;
       width: 350px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -231,6 +231,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center; }
+  header .barraNavegacion nav .botonNav {
+    background-color: #fafae1; }
   header .barraNavegacion nav ul {
     list-style: none;
     display: flex;
