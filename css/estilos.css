@@ -1,5 +1,35 @@
 /* comentario en sas y css */
+@media screen and (min-width: 500px) {
+  /*cambios home-main*/
+  .contenedorPrincipal .mainHome .sectHome {
+    width: 30rem; }
+    .contenedorPrincipal .mainHome .sectHome img {
+      width: 30rem; }
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 30rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros img {
+      width: 30rem; }
+  /*cambios productos-main*/
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; }
+  /*cambios historia-main*/
+  .contenedorPrincipal .mainHistoria .sectHistoria {
+    width: 30rem; }
+    .contenedorPrincipal .mainHistoria .sectHistoria img {
+      width: 30rem; }
+  /*cambios contacto-main*/
+  .contenedorPrincipal .sectContacto {
+    width: 30rem; }
+    .contenedorPrincipal .sectContacto .formulario {
+      width: 30rem; }
+    .contenedorPrincipal .sectContacto .mapaUbi {
+      width: 30rem; } }
+
 @media screen and (min-width: 768px) {
+  /*cambios header*/
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -9,10 +39,34 @@
       display: flex;
       align-items: center;
       justify-content: space-around; }
-  .contenedorProductos {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "1fr 1fr"; } }
+  /*cambios footer*/
+  .footerGeneral {
+    height: 10rem;
+    flex-direction: row;
+    justify-content: space-around; }
+    .footerGeneral .redes {
+      display: flex;
+      gap: 5rem; }
+    .footerGeneral .derechos {
+      display: flex;
+      font-size: 1.5rem; } }
+
+@media screen and (min-width: 900px) {
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 60rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
+      display: flex;
+      justify-content: center;
+      gap: 5px; }
+  /*cambios contacto-main*/
+  .mainContacto .sectContacto {
+    width: 70rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .sectContacto .mapaUbi {
+      height: 26rem; } }
 
 .mainNosotros {
   display: flex;
@@ -29,11 +83,12 @@
     margin: 1rem;
     font-family: 'Cinzel', serif; }
   .mainNosotros .sectNosotros {
+    width: 19rem;
     background-color: whitesmoke;
     border-radius: 3rem;
     overflow: hidden;
     border: solid #583b04;
-    width: 19rem; }
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.22); }
     .mainNosotros .sectNosotros .textoNosotrosUno {
       text-align: center;
       font-size: 1rem;
@@ -44,7 +99,37 @@
       margin: 1rem; }
 
 /* estilos de main productos */
+@media screen and (min-width: 500px) {
+  /*cambios home-main*/
+  .contenedorPrincipal .mainHome .sectHome {
+    width: 30rem; }
+    .contenedorPrincipal .mainHome .sectHome img {
+      width: 30rem; }
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 30rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros img {
+      width: 30rem; }
+  /*cambios productos-main*/
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; }
+  /*cambios historia-main*/
+  .contenedorPrincipal .mainHistoria .sectHistoria {
+    width: 30rem; }
+    .contenedorPrincipal .mainHistoria .sectHistoria img {
+      width: 30rem; }
+  /*cambios contacto-main*/
+  .contenedorPrincipal .sectContacto {
+    width: 30rem; }
+    .contenedorPrincipal .sectContacto .formulario {
+      width: 30rem; }
+    .contenedorPrincipal .sectContacto .mapaUbi {
+      width: 30rem; } }
+
 @media screen and (min-width: 768px) {
+  /*cambios header*/
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -54,10 +139,34 @@
       display: flex;
       align-items: center;
       justify-content: space-around; }
-  .contenedorProductos {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "1fr 1fr"; } }
+  /*cambios footer*/
+  .footerGeneral {
+    height: 10rem;
+    flex-direction: row;
+    justify-content: space-around; }
+    .footerGeneral .redes {
+      display: flex;
+      gap: 5rem; }
+    .footerGeneral .derechos {
+      display: flex;
+      font-size: 1.5rem; } }
+
+@media screen and (min-width: 900px) {
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 60rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
+      display: flex;
+      justify-content: center;
+      gap: 5px; }
+  /*cambios contacto-main*/
+  .mainContacto .sectContacto {
+    width: 70rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .sectContacto .mapaUbi {
+      height: 26rem; } }
 
 .mainProductos {
   justify-content: center;
@@ -79,13 +188,14 @@
     justify-content: center;
     gap: 1rem; }
     .mainProductos .contenedorProductos .contenedorProducto {
+      width: 19rem;
       display: flex;
       flex-direction: column;
       background-color: whitesmoke;
       border-radius: 3rem;
       overflow: hidden;
       border: solid #583b04;
-      width: 19rem; }
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.22); }
       .mainProductos .contenedorProductos .contenedorProducto .tituloProducto {
         text-align: center; }
         .mainProductos .contenedorProductos .contenedorProducto .tituloProducto h2 {
@@ -106,7 +216,37 @@
           color: whitesmoke;
           font-size: 1.3rem; }
 
+@media screen and (min-width: 500px) {
+  /*cambios home-main*/
+  .contenedorPrincipal .mainHome .sectHome {
+    width: 30rem; }
+    .contenedorPrincipal .mainHome .sectHome img {
+      width: 30rem; }
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 30rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros img {
+      width: 30rem; }
+  /*cambios productos-main*/
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; }
+  /*cambios historia-main*/
+  .contenedorPrincipal .mainHistoria .sectHistoria {
+    width: 30rem; }
+    .contenedorPrincipal .mainHistoria .sectHistoria img {
+      width: 30rem; }
+  /*cambios contacto-main*/
+  .contenedorPrincipal .sectContacto {
+    width: 30rem; }
+    .contenedorPrincipal .sectContacto .formulario {
+      width: 30rem; }
+    .contenedorPrincipal .sectContacto .mapaUbi {
+      width: 30rem; } }
+
 @media screen and (min-width: 768px) {
+  /*cambios header*/
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -116,10 +256,34 @@
       display: flex;
       align-items: center;
       justify-content: space-around; }
-  .contenedorProductos {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "1fr 1fr"; } }
+  /*cambios footer*/
+  .footerGeneral {
+    height: 10rem;
+    flex-direction: row;
+    justify-content: space-around; }
+    .footerGeneral .redes {
+      display: flex;
+      gap: 5rem; }
+    .footerGeneral .derechos {
+      display: flex;
+      font-size: 1.5rem; } }
+
+@media screen and (min-width: 900px) {
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 60rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
+      display: flex;
+      justify-content: center;
+      gap: 5px; }
+  /*cambios contacto-main*/
+  .mainContacto .sectContacto {
+    width: 70rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .sectContacto .mapaUbi {
+      height: 26rem; } }
 
 .mainHistoria {
   display: flex;
@@ -136,11 +300,12 @@
     margin: 1rem;
     font-family: 'Cinzel', serif; }
   .mainHistoria .sectHistoria {
+    width: 19rem;
     background-color: whitesmoke;
     border-radius: 3rem;
     overflow: hidden;
     border: solid #583b04;
-    width: 19rem; }
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.22); }
     .mainHistoria .sectHistoria .textoHistoriaUno {
       text-align: center;
       font-size: 1rem;
@@ -151,7 +316,37 @@
       margin: 1rem; }
 
 /* estilos del main contacto */
+@media screen and (min-width: 500px) {
+  /*cambios home-main*/
+  .contenedorPrincipal .mainHome .sectHome {
+    width: 30rem; }
+    .contenedorPrincipal .mainHome .sectHome img {
+      width: 30rem; }
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 30rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros img {
+      width: 30rem; }
+  /*cambios productos-main*/
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; }
+  /*cambios historia-main*/
+  .contenedorPrincipal .mainHistoria .sectHistoria {
+    width: 30rem; }
+    .contenedorPrincipal .mainHistoria .sectHistoria img {
+      width: 30rem; }
+  /*cambios contacto-main*/
+  .contenedorPrincipal .sectContacto {
+    width: 30rem; }
+    .contenedorPrincipal .sectContacto .formulario {
+      width: 30rem; }
+    .contenedorPrincipal .sectContacto .mapaUbi {
+      width: 30rem; } }
+
 @media screen and (min-width: 768px) {
+  /*cambios header*/
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -161,10 +356,34 @@
       display: flex;
       align-items: center;
       justify-content: space-around; }
-  .contenedorProductos {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "1fr 1fr"; } }
+  /*cambios footer*/
+  .footerGeneral {
+    height: 10rem;
+    flex-direction: row;
+    justify-content: space-around; }
+    .footerGeneral .redes {
+      display: flex;
+      gap: 5rem; }
+    .footerGeneral .derechos {
+      display: flex;
+      font-size: 1.5rem; } }
+
+@media screen and (min-width: 900px) {
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 60rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
+      display: flex;
+      justify-content: center;
+      gap: 5px; }
+  /*cambios contacto-main*/
+  .mainContacto .sectContacto {
+    width: 70rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .sectContacto .mapaUbi {
+      height: 26rem; } }
 
 .mainContacto {
   display: flex;
@@ -183,11 +402,12 @@
       margin: 1rem;
       font-family: 'Cinzel', serif; }
   .mainContacto .sectContacto {
+    width: 19rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .mainContacto .sectContacto .formulario {
-      width: 350px;
+      width: 19rem;
       background-color: whitesmoke;
       padding: 1rem;
       border-radius: 30px;
@@ -198,9 +418,39 @@
     .mainContacto .sectContacto .mapaUbi {
       border-radius: 30px;
       margin: 1rem;
-      width: 350px; }
+      width: 19rem; }
+
+@media screen and (min-width: 500px) {
+  /*cambios home-main*/
+  .contenedorPrincipal .mainHome .sectHome {
+    width: 30rem; }
+    .contenedorPrincipal .mainHome .sectHome img {
+      width: 30rem; }
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 30rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros img {
+      width: 30rem; }
+  /*cambios productos-main*/
+  .contenedorProductos {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1fr 1fr"; }
+  /*cambios historia-main*/
+  .contenedorPrincipal .mainHistoria .sectHistoria {
+    width: 30rem; }
+    .contenedorPrincipal .mainHistoria .sectHistoria img {
+      width: 30rem; }
+  /*cambios contacto-main*/
+  .contenedorPrincipal .sectContacto {
+    width: 30rem; }
+    .contenedorPrincipal .sectContacto .formulario {
+      width: 30rem; }
+    .contenedorPrincipal .sectContacto .mapaUbi {
+      width: 30rem; } }
 
 @media screen and (min-width: 768px) {
+  /*cambios header*/
   header {
     background-image: url(../imagenes/platospresentacionok.jpg);
     height: 10rem;
@@ -210,10 +460,34 @@
       display: flex;
       align-items: center;
       justify-content: space-around; }
-  .contenedorProductos {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "1fr 1fr"; } }
+  /*cambios footer*/
+  .footerGeneral {
+    height: 10rem;
+    flex-direction: row;
+    justify-content: space-around; }
+    .footerGeneral .redes {
+      display: flex;
+      gap: 5rem; }
+    .footerGeneral .derechos {
+      display: flex;
+      font-size: 1.5rem; } }
+
+@media screen and (min-width: 900px) {
+  /*cambios nosotros-main*/
+  .contenedorPrincipal .mainNosotros .sectNosotros {
+    width: 60rem; }
+    .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
+      display: flex;
+      justify-content: center;
+      gap: 5px; }
+  /*cambios contacto-main*/
+  .mainContacto .sectContacto {
+    width: 70rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .sectContacto .mapaUbi {
+      height: 26rem; } }
 
 * {
   margin: 0;
@@ -279,13 +553,14 @@ header {
       margin: 1rem;
       font-family: 'Cinzel', serif; }
   .mainHome .sectHome {
+    width: 19rem;
     grid-area: sectHome;
     justify-content: center;
     background-color: whitesmoke;
     border-radius: 3rem;
     overflow: hidden;
     border: solid #583b04;
-    width: 19rem; }
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.22); }
     .mainHome .sectHome .imgHomeUno {
       grid-area: imgHomeUno; }
     .mainHome .sectHome .textoHomeUno {

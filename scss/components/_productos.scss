@@ -25,7 +25,8 @@
         justify-content: center;
         gap: 1rem;
 
-        .contenedorProducto {            
+        .contenedorProducto {    
+            width: 19rem;       
             display: flex;
             flex-direction: column;
             @include cont-general;

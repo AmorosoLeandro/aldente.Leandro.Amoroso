@@ -1,4 +1,73 @@
+@media screen and (min-width: 500px) {
+
+    /*cambios home-main*/
+    .contenedorPrincipal {
+        .mainHome {
+            .sectHome {
+                width: 30rem;
+
+                img {
+                    width: 30rem;
+                }
+
+            }
+        }
+    }
+
+    /*cambios nosotros-main*/
+    .contenedorPrincipal {
+        .mainNosotros {
+            .sectNosotros {
+                width: 30rem;
+
+                img {
+                    width: 30rem;
+                }
+
+            }
+        }
+    }
+
+    /*cambios productos-main*/
+    .contenedorProductos {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "1fr 1fr";
+
+    }
+
+    /*cambios historia-main*/
+    .contenedorPrincipal {
+        .mainHistoria {
+            .sectHistoria {
+                width: 30rem;
+
+                img {
+                    width: 30rem;
+                }
+
+            }
+        }
+    }
+
+    /*cambios contacto-main*/
+    .contenedorPrincipal {
+        .sectContacto {
+            width: 30rem;
+
+            .formulario {
+                width: 30rem;
+            }
+
+            .mapaUbi {
+                width: 30rem;
+            }
+        }
+    }
+}
 @media screen and (min-width: 768px) {
+
+    /*cambios header*/
     header {
         background-image: url(../imagenes/platospresentacionok.jpg);
         height: 10rem;
@@ -11,10 +80,50 @@
             justify-content: space-around;
         }
     }
-    .contenedorProductos{
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "1fr 1fr";
-        
+
+    /*cambios footer*/
+    .footerGeneral {
+        height: 10rem;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .redes {
+            display: flex;
+            gap: 5rem;
+        }
+
+        .derechos {
+            display: flex;
+            font-size: 1.5rem;
+        }
+    }
+   
+}
+@media screen and (min-width: 900px) {
+     /*cambios nosotros-main*/
+     .contenedorPrincipal{
+        .mainNosotros{
+            .sectNosotros{
+                width: 60rem;
+                .contImgNosotros{
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+                }
+            }
+        }
+    }
+    /*cambios contacto-main*/
+    .mainContacto{
+        .sectContacto{
+            width: 70rem;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .mapaUbi{
+                height: 26rem;
+            }
+        }
     }
 }
+

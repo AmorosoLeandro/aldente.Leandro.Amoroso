@@ -104,6 +104,7 @@ header {
     }
 
     .sectHome {
+        width: 19rem;
         grid-area: sectHome;
         justify-content: center;
         @include cont-general;
