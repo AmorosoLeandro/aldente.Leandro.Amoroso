@@ -1,5 +1,5 @@
 /* comentario en sas y css */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
   /*cambios home-main*/
   .contenedorPrincipal .mainHome .sectHome {
     width: 30rem; }
@@ -57,6 +57,7 @@
     width: 60rem; }
     .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       gap: 5px; }
   /*cambios contacto-main*/
@@ -68,6 +69,7 @@
     .mainContacto .sectContacto .mapaUbi {
       height: 26rem; } }
 
+/*ESTILOS MAIN NOSOTROS*/
 .mainNosotros {
   display: flex;
   flex-direction: column;
@@ -93,13 +95,18 @@
       text-align: center;
       font-size: 1rem;
       margin: 1rem; }
+    .mainNosotros .sectNosotros .contImgNosotros {
+      display: flex;
+      flex-direction: column;
+      gap: 5px; }
+      .mainNosotros .sectNosotros .contImgNosotros img {
+        width: 100%; }
     .mainNosotros .sectNosotros .textoNosotrosDos {
       text-align: center;
       font-size: 1rem;
       margin: 1rem; }
 
-/* estilos de main productos */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
   /*cambios home-main*/
   .contenedorPrincipal .mainHome .sectHome {
     width: 30rem; }
@@ -157,6 +164,7 @@
     width: 60rem; }
     .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       gap: 5px; }
   /*cambios contacto-main*/
@@ -168,6 +176,7 @@
     .mainContacto .sectContacto .mapaUbi {
       height: 26rem; } }
 
+/*ESTILOS MAIN PRODUCTOS*/
 .mainProductos {
   justify-content: center;
   align-items: center;
@@ -195,9 +204,11 @@
       border-radius: 3rem;
       overflow: hidden;
       border: solid #583b04;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.22); }
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.22);
+      justify-content: space-between; }
       .mainProductos .contenedorProductos .contenedorProducto .tituloProducto {
-        text-align: center; }
+        text-align: center;
+        justify-content: flex-start; }
         .mainProductos .contenedorProductos .contenedorProducto .tituloProducto h2 {
           font-family: 'Cinzel', serif;
           font-size: 2rem; }
@@ -207,16 +218,17 @@
         margin: 1rem; }
       .mainProductos .contenedorProductos .contenedorProducto .verMas {
         background-color: #583b04;
-        text-align: center;
         height: 3rem;
-        justify-items: center; }
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         .mainProductos .contenedorProductos .contenedorProducto .verMas a {
           text-align: center;
           text-decoration: none;
           color: whitesmoke;
           font-size: 1.3rem; }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
   /*cambios home-main*/
   .contenedorPrincipal .mainHome .sectHome {
     width: 30rem; }
@@ -274,6 +286,7 @@
     width: 60rem; }
     .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       gap: 5px; }
   /*cambios contacto-main*/
@@ -285,6 +298,7 @@
     .mainContacto .sectContacto .mapaUbi {
       height: 26rem; } }
 
+/*ESTILOS MAIN HISTORIA*/
 .mainHistoria {
   display: flex;
   flex-direction: column;
@@ -306,17 +320,20 @@
     overflow: hidden;
     border: solid #583b04;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.22); }
+    .mainHistoria .sectHistoria .imgHistoriaUno img {
+      width: 100%; }
     .mainHistoria .sectHistoria .textoHistoriaUno {
       text-align: center;
       font-size: 1rem;
       margin: 1rem; }
+    .mainHistoria .sectHistoria .imgHistoriaDos img {
+      width: 100%; }
     .mainHistoria .sectHistoria .textoHistoriaDos {
       text-align: center;
       font-size: 1rem;
       margin: 1rem; }
 
-/* estilos del main contacto */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
   /*cambios home-main*/
   .contenedorPrincipal .mainHome .sectHome {
     width: 30rem; }
@@ -374,6 +391,7 @@
     width: 60rem; }
     .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       gap: 5px; }
   /*cambios contacto-main*/
@@ -385,6 +403,7 @@
     .mainContacto .sectContacto .mapaUbi {
       height: 26rem; } }
 
+/*ESTILOS MAIN CONTACTO*/
 .mainContacto {
   display: flex;
   flex-direction: column;
@@ -420,7 +439,7 @@
       margin: 1rem;
       width: 19rem; }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
   /*cambios home-main*/
   .contenedorPrincipal .mainHome .sectHome {
     width: 30rem; }
@@ -478,6 +497,7 @@
     width: 60rem; }
     .contenedorPrincipal .mainNosotros .sectNosotros .contImgNosotros {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       gap: 5px; }
   /*cambios contacto-main*/
@@ -494,11 +514,11 @@
   padding: 0;
   box-sizing: border-box; }
 
-/* estilos del body */
+/*ESTILOS DEL BODY*/
 .contenedorPrincipal {
   background-color: #fafae1; }
 
-/* estilos del header */
+/*ESTILOS DEL HEADER*/
 header {
   background-color: #583b04; }
   header .barraNavegacion .divLogo {
@@ -520,17 +540,18 @@ header {
         font-size: 1rem;
         color: whitesmoke; }
 
-/* estilos del footer */
+/*ESTILOS DEL FOOTER*/
 .footerGeneral {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 5rem; }
   .footerGeneral .footerGeneral .redes {
     margin: 1.5rem; }
     .footerGeneral .footerGeneral .redes .footerGeneral .redes .aRedes {
       margin: 1rem; }
 
-/* estilos del main */
+/*ESTILOS MAIN HOME*/
 .mainHome {
   font-family: 'Cinzel', serif;
   display: grid;
@@ -563,6 +584,8 @@ header {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.22); }
     .mainHome .sectHome .imgHomeUno {
       grid-area: imgHomeUno; }
+      .mainHome .sectHome .imgHomeUno img {
+        width: 100%; }
     .mainHome .sectHome .textoHomeUno {
       grid-area: textoHomeUno;
       text-align: center;
@@ -570,6 +593,8 @@ header {
       margin: 1rem; }
     .mainHome .sectHome .imgHomeDos {
       grid-area: imgHomeDos; }
+      .mainHome .sectHome .imgHomeDos img {
+        width: 100%; }
     .mainHome .sectHome .textoHomeDos {
       grid-area: textoHomeDos;
       text-align: center;

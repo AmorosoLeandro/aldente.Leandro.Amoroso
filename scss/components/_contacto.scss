@@ -1,14 +1,13 @@
-/* estilos del main contacto */
 @import "base/mediaQueries";
 @import "base/variables";
 @import "base/listas";
 @import "base/mixin";
 
+/*ESTILOS MAIN CONTACTO*/
 .mainContacto {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
     .encabezado {
         font-family: 'Cinzel', serif;
@@ -27,6 +26,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .formulario {
             width: 19rem;
             background-color: nth($list: $colores, $n: 4);

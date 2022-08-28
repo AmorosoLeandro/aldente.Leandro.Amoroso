@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
 
     /*cambios home-main*/
     .contenedorPrincipal {
@@ -65,6 +65,7 @@
         }
     }
 }
+
 @media screen and (min-width: 768px) {
 
     /*cambios header*/
@@ -97,33 +98,38 @@
             font-size: 1.5rem;
         }
     }
-   
+
 }
+
 @media screen and (min-width: 900px) {
-     /*cambios nosotros-main*/
-     .contenedorPrincipal{
-        .mainNosotros{
-            .sectNosotros{
+
+    /*cambios nosotros-main*/
+    .contenedorPrincipal {
+        .mainNosotros {
+            .sectNosotros {
                 width: 60rem;
-                .contImgNosotros{
+
+                .contImgNosotros {
                     display: flex;
+                    flex-direction: row;
                     justify-content: center;
                     gap: 5px;
                 }
             }
         }
     }
+
     /*cambios contacto-main*/
-    .mainContacto{
-        .sectContacto{
+    .mainContacto {
+        .sectContacto {
             width: 70rem;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            .mapaUbi{
+
+            .mapaUbi {
                 height: 26rem;
             }
         }
     }
 }
-

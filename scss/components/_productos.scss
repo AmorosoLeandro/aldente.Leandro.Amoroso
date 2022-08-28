@@ -1,9 +1,9 @@
-/* estilos de main productos */
 @import "base/mediaQueries";
 @import "base/variables";
 @import "base/listas";
 @import "base/mixin";
 
+/*ESTILOS MAIN PRODUCTOS*/
 .mainProductos {
     justify-content: center;
     align-items: center;
@@ -25,15 +25,16 @@
         justify-content: center;
         gap: 1rem;
 
-        .contenedorProducto {    
-            width: 19rem;       
+        .contenedorProducto {
+            width: 19rem;
             display: flex;
             flex-direction: column;
             @include cont-general;
+            justify-content: space-between;
 
             .tituloProducto {
                 text-align: center;
-                
+                justify-content: flex-start;
 
                 h2 {
                     font-family: 'Cinzel', serif;
@@ -43,14 +44,14 @@
 
             .textoProducto {
                 @include textGeneral;
-
             }
 
             .verMas {
                 background-color: rgb(88, 59, 4);
-                 text-align: center;
                 height: 3rem;
-                justify-items: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 a {
                     @include boton-general;
@@ -59,7 +60,4 @@
             }
         }
     }
-
-
-
 }

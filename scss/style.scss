@@ -1,4 +1,3 @@
-//comentario sin que se vea en el css
 /* comentario en sas y css */
 
 @import "components/nosotros";
@@ -17,30 +16,27 @@
     box-sizing: border-box;
 }
 
-/* estilos del body */
-
+/*ESTILOS DEL BODY*/
 .contenedorPrincipal {
     background-color: nth($list: $colores, $n: 1);
 }
 
-/* estilos del header */
+/*ESTILOS DEL HEADER*/
 header {
     background-color: nth($list: $colores, $n: 2);
 
     .barraNavegacion {
-
-
         .divLogo {
             display: flex;
             justify-content: center;
             align-items: center;
-
         }
 
         nav {
-            .botonNav{
+            .botonNav {
                 background-color: nth($list: $colores, $n: 1);
             }
+
             ul {
                 list-style: none;
                 display: flex;
@@ -63,13 +59,12 @@ header {
     }
 }
 
-
-
-/* estilos del footer */
+/*ESTILOS DEL FOOTER*/
 .footerGeneral {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5rem;
 
     .footerGeneral .redes {
         margin: 1.5rem;
@@ -80,7 +75,7 @@ header {
     }
 }
 
-/* estilos del main */
+/*ESTILOS MAIN HOME*/
 .mainHome {
     font-family: 'Cinzel', serif;
     display: grid;
@@ -108,25 +103,33 @@ header {
         grid-area: sectHome;
         justify-content: center;
         @include cont-general;
-        
+
         .imgHomeUno {
             grid-area: imgHomeUno;
+
+            img {
+                width: 100%;
+            }
         }
 
         .textoHomeUno {
             grid-area: textoHomeUno;
             @include textGeneral;
-            
+
         }
 
         .imgHomeDos {
             grid-area: imgHomeDos;
+
+            img {
+                width: 100%;
+            }
         }
 
         .textoHomeDos {
             grid-area: textoHomeDos;
             @include textGeneral;
-            
+
         }
     }
 }
