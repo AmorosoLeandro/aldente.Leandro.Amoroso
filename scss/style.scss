@@ -66,11 +66,12 @@ header {
     align-items: center;
     margin-top: 5rem;
 
-    .footerGeneral .redes {
+    .redes {
         margin: 1.5rem;
+        display: flex;
 
-        .footerGeneral .redes .aRedes {
-            margin: 1rem;
+        .aRedes {
+            margin: 2rem;
         }
     }
 }

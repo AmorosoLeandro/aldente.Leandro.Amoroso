@@ -546,10 +546,11 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem; }
-  .footerGeneral .footerGeneral .redes {
-    margin: 1.5rem; }
-    .footerGeneral .footerGeneral .redes .footerGeneral .redes .aRedes {
-      margin: 1rem; }
+  .footerGeneral .redes {
+    margin: 1.5rem;
+    display: flex; }
+    .footerGeneral .redes .aRedes {
+      margin: 2rem; }
 
 /*ESTILOS MAIN HOME*/
 .mainHome {
