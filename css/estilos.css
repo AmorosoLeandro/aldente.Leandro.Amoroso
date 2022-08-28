@@ -73,7 +73,8 @@
 .mainNosotros {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Cinzel', serif; }
   .mainNosotros .encabezado .encabezadoTitulo {
     text-align: center;
     font-size: 3rem;
@@ -180,7 +181,8 @@
 .mainProductos {
   justify-content: center;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  font-family: 'Cinzel', serif; }
   .mainProductos .encabezado .encabezadoTitulo {
     text-align: center;
     font-size: 3rem;
@@ -302,7 +304,8 @@
 .mainHistoria {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Cinzel', serif; }
   .mainHistoria .encabezado .encabezadoTitulo {
     text-align: center;
     font-size: 3rem;
@@ -407,7 +410,8 @@
 .mainContacto {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Cinzel', serif; }
   .mainContacto .encabezado {
     font-family: 'Cinzel', serif; }
     .mainContacto .encabezado .encabezadoTitulo {
