@@ -413,17 +413,20 @@
   align-items: center;
   font-family: 'Cinzel', serif; }
   .mainContacto .encabezado {
-    font-family: 'Cinzel', serif; }
+    font-family: 'Cinzel', serif;
+    justify-content: center; }
     .mainContacto .encabezado .encabezadoTitulo {
       text-align: center;
       font-size: 3rem;
       margin: 1rem;
-      font-family: 'Cinzel', serif; }
+      font-family: 'Cinzel', serif;
+      width: 90%; }
     .mainContacto .encabezado .encabezadoSubtitulo {
       text-align: center;
       font-size: 1.5rem;
       margin: 1rem;
-      font-family: 'Cinzel', serif; }
+      font-family: 'Cinzel', serif;
+      width: 90%; }
   .mainContacto .sectContacto {
     width: 19rem;
     display: flex;
@@ -520,7 +523,8 @@
 
 /*ESTILOS DEL BODY*/
 .contenedorPrincipal {
-  background-color: #fafae1; }
+  background-color: #fafae1;
+  width: 100%; }
 
 /*ESTILOS DEL HEADER*/
 header {

@@ -4,6 +4,7 @@
 @import "base/mixin";
 
 /*ESTILOS MAIN CONTACTO*/
+
 .mainContacto {
     display: flex;
     flex-direction: column;
@@ -12,13 +13,17 @@
 
     .encabezado {
         font-family: 'Cinzel', serif;
+        justify-content: center;
 
         .encabezadoTitulo {
             @include titulo;
+            width: 90%;
+            
         }
 
         .encabezadoSubtitulo {
             @include subtitulo;
+            width: 90%;
         }
     }
 
