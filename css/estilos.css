@@ -62,12 +62,16 @@
       gap: 5px; }
   /*cambios contacto-main*/
   .mainContacto .sectContacto {
-    width: 70rem;
     flex-direction: row;
+    width: auto;
     justify-content: center;
     align-items: center; }
+    .mainContacto .sectContacto .formulario {
+      width: 30rem;
+      height: 30rem; }
     .mainContacto .sectContacto .mapaUbi {
-      height: 26rem; } }
+      width: 30rem;
+      height: 30rem; } }
 
 /*ESTILOS MAIN NOSOTROS*/
 .mainNosotros {
@@ -170,12 +174,16 @@
       gap: 5px; }
   /*cambios contacto-main*/
   .mainContacto .sectContacto {
-    width: 70rem;
     flex-direction: row;
+    width: auto;
     justify-content: center;
     align-items: center; }
+    .mainContacto .sectContacto .formulario {
+      width: 30rem;
+      height: 30rem; }
     .mainContacto .sectContacto .mapaUbi {
-      height: 26rem; } }
+      width: 30rem;
+      height: 30rem; } }
 
 /*ESTILOS MAIN PRODUCTOS*/
 .mainProductos {
@@ -293,12 +301,16 @@
       gap: 5px; }
   /*cambios contacto-main*/
   .mainContacto .sectContacto {
-    width: 70rem;
     flex-direction: row;
+    width: auto;
     justify-content: center;
     align-items: center; }
+    .mainContacto .sectContacto .formulario {
+      width: 30rem;
+      height: 30rem; }
     .mainContacto .sectContacto .mapaUbi {
-      height: 26rem; } }
+      width: 30rem;
+      height: 30rem; } }
 
 /*ESTILOS MAIN HISTORIA*/
 .mainHistoria {
@@ -399,12 +411,16 @@
       gap: 5px; }
   /*cambios contacto-main*/
   .mainContacto .sectContacto {
-    width: 70rem;
     flex-direction: row;
+    width: auto;
     justify-content: center;
     align-items: center; }
+    .mainContacto .sectContacto .formulario {
+      width: 30rem;
+      height: 30rem; }
     .mainContacto .sectContacto .mapaUbi {
-      height: 26rem; } }
+      width: 30rem;
+      height: 30rem; } }
 
 /*ESTILOS MAIN CONTACTO*/
 .mainContacto {
@@ -419,16 +435,14 @@
       text-align: center;
       font-size: 3rem;
       margin: 1rem;
-      font-family: 'Cinzel', serif;
-      width: 90%; }
+      font-family: 'Cinzel', serif; }
     .mainContacto .encabezado .encabezadoSubtitulo {
       text-align: center;
       font-size: 1.5rem;
       margin: 1rem;
-      font-family: 'Cinzel', serif;
-      width: 90%; }
+      font-family: 'Cinzel', serif; }
   .mainContacto .sectContacto {
-    width: 19rem;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -509,12 +523,16 @@
       gap: 5px; }
   /*cambios contacto-main*/
   .mainContacto .sectContacto {
-    width: 70rem;
     flex-direction: row;
+    width: auto;
     justify-content: center;
     align-items: center; }
+    .mainContacto .sectContacto .formulario {
+      width: 30rem;
+      height: 30rem; }
     .mainContacto .sectContacto .mapaUbi {
-      height: 26rem; } }
+      width: 30rem;
+      height: 30rem; } }
 
 * {
   margin: 0;
@@ -523,8 +541,7 @@
 
 /*ESTILOS DEL BODY*/
 .contenedorPrincipal {
-  background-color: #fafae1;
-  width: 100%; }
+  background-color: #fafae1; }
 
 /*ESTILOS DEL HEADER*/
 header {

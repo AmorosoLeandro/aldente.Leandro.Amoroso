@@ -18,8 +18,7 @@
 
 /*ESTILOS DEL BODY*/
 .contenedorPrincipal {
-    background-color: nth($list: $colores, $n: 1);
-    width: 100%;
+    background-color: nth($list: $colores, $n: 1);    
 }
 
 /*ESTILOS DEL HEADER*/

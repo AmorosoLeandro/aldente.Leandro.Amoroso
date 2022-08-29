@@ -16,19 +16,16 @@
         justify-content: center;
 
         .encabezadoTitulo {
-            @include titulo;
-            width: 90%;
-            
+            @include titulo;            
         }
 
         .encabezadoSubtitulo {
-            @include subtitulo;
-            width: 90%;
+            @include subtitulo;            
         }
     }
 
     .sectContacto {
-        width: 19rem;
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
