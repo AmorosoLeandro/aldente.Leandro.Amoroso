@@ -542,10 +542,10 @@ header {
   align-items: center;
   margin-top: 5rem; }
   .footerGeneral .redes {
-    margin: 1.5rem;
-    display: flex; }
+    display: flex;
+    gap: 1rem; }
     .footerGeneral .redes .aRedes {
-      margin: 2rem; }
+      margin: 1rem; }
 
 /*ESTILOS MAIN HOME*/
 .mainHome {
